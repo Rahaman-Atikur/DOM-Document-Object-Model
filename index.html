@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        #my-place {
+            color: blue;
+        }
+
+        #p-places {
+            color: yellow;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,6 +43,16 @@
             <li>Thats fine</li>
             <li>Thats fine</li>
         </ul>
+        <section>
+            <h1 id="my-place">My Favourite Place</h1>
+            <ul>
+                <li class="p-place">KataBan</li>
+                <li class="p-place">Bandarban</li>
+                <li class="p-place">Shundarban</li>
+                <li>KataBan</li>
+                <li>Shundarban</li>
+            </ul>
+        </section>
     </main>
     <script src="scripts/script.js"></script>
     <script>
@@ -41,6 +60,23 @@
         for (const list of allListOfUL) {
             console.log(list.innerText);
         }
+        // let changeSomeColor = document.getElementById('my-place');
+        //  con
+
+        //  let places = (document.getElementsByClassName('p-places'));
+        let change = document.getElementById('my-place');
+        change.innerText = 'I love You';
+        document.getElementsByTagName('h1');
+        document.getElementsByClassName('class-name');
+        document.querySelectorAll('#id');
+        // Query Selector All
+        let someList = document.querySelectorAll('.fruits-containerAll');
+        for (let li of someList) {
+            console.log(li.innerText);
+        }
+
+
+
     </script>
 
 </body>
