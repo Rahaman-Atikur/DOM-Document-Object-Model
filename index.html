@@ -7,6 +7,9 @@
     <title>Dom</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
+        .fruits-container{
+            color: blue;
+        }
         #my-place {
             color: blue;
         }
@@ -46,11 +49,19 @@
         <section>
             <h1 id="my-place">My Favourite Place</h1>
             <ul>
-                <li class="p-place">KataBan</li>
+                <li class="my-places">KataBan</li>
                 <li class="p-place">Bandarban</li>
                 <li class="p-place">Shundarban</li>
                 <li>KataBan</li>
                 <li>Shundarban</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <ul>
+                <li id="fruits-name">Apple</li>
+                <li id="fruits-name">Banana</li>
+                <li id="fruits-name">Grapes</li>
+                <li id="fruits-name">Mango</li>
             </ul>
         </section>
     </main>
@@ -77,6 +88,13 @@
 
 
         let changeColor = document.getElementById('my-place').style.color='yellow';
+        //Query Selector all
+        let someLi = document.querySelectorAll('.fruits-container li');
+        for(const li of someLi){
+            console.log(someLi.innerText);
+        }
+        
+
 
 
 
