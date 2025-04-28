@@ -7,9 +7,10 @@
     <title>Dom</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        .fruits-container{
+        .fruits-container {
             color: blue;
         }
+
         #my-place {
             color: blue;
         }
@@ -25,30 +26,36 @@
         <h1>Welcome to my Dom</h1>
     </header>
     <main>
-        <h1>My awesome dom</h1>
-        <h3>Its fine</h3>
-        <ul>
-            <li>Okk</li>
-            <li>No pop</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-            <li>Thats fine</li>
-        </ul>
+        <!-- section 3 -->
         <section>
-            <h1 id="my-place">My Favourite Place</h1>
+            <h1>My awesome dom</h1>
+            <h3>Its fine</h3>
             <ul>
+                <li>Okk</li>
+                <li>No pop</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+                <li>Thats fine</li>
+            </ul>
+
+
+        </section>
+        <!-- Section 2 -->
+        <section id="my-place">
+            <h1>My Favourite Place</h1>
+            <ul id="places-list">
                 <li class="my-places">KataBan</li>
                 <li class="p-place">Bandarban</li>
                 <li class="p-place">Shundarban</li>
@@ -56,7 +63,9 @@
                 <li>Shundarban</li>
             </ul>
         </section>
+        <!-- Section 1 -->
         <section class="fruits-container">
+            <h1>My Lovely Fruits</h1>
             <ul>
                 <li id="fruits-name">Apple</li>
                 <li id="fruits-name">Banana</li>
@@ -66,10 +75,12 @@
         </section>
     </main>
     <script src="scripts/script.js"></script>
-    <script>
+    <script src="styleInJs.js"></script>
+    <script src="append.js"></script>
+    <!-- <script>
         let allListOfUL = document.getElementsByTagName('ul');
         for (const list of allListOfUL) {
-            console.log(list.innerText);
+            // console.log(list.innerText);
         }
         // let changeSomeColor = document.getElementById('my-place');
         //  con
@@ -83,7 +94,7 @@
         // Query Selector All
         let someList = document.querySelectorAll('.fruits-containerAll');
         for (let list of someList) {
-            console.log(list);
+            // console.log(list);
         }
 
 
@@ -91,13 +102,9 @@
         //Query Selector all
         let someLi = document.querySelectorAll('.fruits-container li');
         for(const li of someLi){
-            console.log(someLi.innerText);
+            // console.log(someLi.innerText);
         }
-        
-
-
-
-
+ -->
     </script>
 
 </body>
